@@ -10,7 +10,7 @@ header.masthead {
 
   .intro-text {
     padding-top: 120px;
-    padding-bottom: 230px;
+    padding-bottom: 32px;
 
     .logo-with-text {
       max-width: 300px;
@@ -31,6 +31,30 @@ header.masthead {
       margin-bottom: 24px;
       @include heading-font;
     }
+
+    .see-more {
+      margin-top: 40px;
+      color: rgba($color: #ffffff, $alpha: 0.6);
+      cursor: pointer;
+
+      &:hover {
+        @include infinite;
+        color: rgba($color: #ffffff, $alpha: 1);
+      }
+
+      a {
+        text-decoration: none;
+        color: rgba($color: #ffffff, $alpha: 0.6);
+
+        &:hover {
+          color: rgba($color: #ffffff, $alpha: 1);
+        }
+
+        p {
+          margin-bottom: 8px;
+        }
+      }
+    }
   }
 }
 
@@ -38,7 +62,7 @@ header.masthead {
   header.masthead {
     .intro-text {
       padding-top: 180px;
-      padding-bottom: 420px;
+      padding-bottom: 48px;
 
       .logo-with-text {
         max-width: 600px;

@@ -265,7 +265,7 @@ header.masthead {
 
 header.masthead .intro-text {
   padding-top: 120px;
-  padding-bottom: 230px;
+  padding-bottom: 32px;
 }
 
 header.masthead .intro-text .logo-with-text {
@@ -288,10 +288,35 @@ header.masthead .intro-text .intro-solution-sub {
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
+header.masthead .intro-text .see-more {
+  margin-top: 40px;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+
+header.masthead .intro-text .see-more:hover {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  color: white;
+}
+
+header.masthead .intro-text .see-more a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+header.masthead .intro-text .see-more a:hover {
+  color: white;
+}
+
+header.masthead .intro-text .see-more a p {
+  margin-bottom: 8px;
+}
+
 @media (min-width: 768px) {
   header.masthead .intro-text {
     padding-top: 180px;
-    padding-bottom: 420px;
+    padding-bottom: 48px;
   }
   header.masthead .intro-text .logo-with-text {
     max-width: 600px;
@@ -330,6 +355,20 @@ header.masthead .intro-text .intro-solution-sub {
   header.masthead .intro-text .see-more a p {
     margin-bottom: 8px;
   }
+}
+
+#solution .solution {
+  background-image: url("../../img/solution.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 768px;
+}
+
+#solution .row-center {
+  justify-content: center;
 }
 
 .service-heading {
