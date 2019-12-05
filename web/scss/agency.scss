@@ -2,6 +2,10 @@
 @import "base/variables.scss";
 @import "base/mixins.scss";
 
+// Animates
+@import "animates/animated";
+@import "animates/bounce";
+
 // Global CSS
 @import "base/page.scss";
 

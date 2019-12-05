@@ -2,48 +2,86 @@
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url('../img/header-bg.jpg');
+  background-image: url('../../img/header-bg.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
+
   .intro-text {
-    padding-top: 150px;
-    padding-bottom: 100px;
-    .intro-lead-in {
-      font-size: 22px;
-      font-style: italic;
-      line-height: 22px;
-      margin-bottom: 25px;
-      @include serif-font;
+    padding-top: 120px;
+    padding-bottom: 230px;
+
+    .logo-with-text {
+      max-width: 300px;
+      margin-bottom: 48px;
     }
-    .intro-heading {
-      font-size: 50px;
-      font-weight: 700;
-      line-height: 50px;
-      margin-bottom: 25px;
+
+    .intro-solution {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 32px;
+      margin-bottom: 16px;
+      @include heading-font;
+    }
+
+    .intro-solution-sub {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 24px;
       @include heading-font;
     }
   }
 }
+
 @media(min-width:768px) {
   header.masthead {
     .intro-text {
-      padding-top: 300px;
-      padding-bottom: 200px;
-      .intro-lead-in {
-        font-size: 40px;
-        font-style: italic;
-        line-height: 40px;
-        margin-bottom: 25px;
-        @include serif-font;
+      padding-top: 180px;
+      padding-bottom: 420px;
+
+      .logo-with-text {
+        max-width: 600px;
+        margin-bottom: 64px;
       }
-      .intro-heading {
-        font-size: 75px;
-        font-weight: 700;
-        line-height: 75px;
-        margin-bottom: 50px;
+
+      .intro-solution {
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 48px;
+        margin-bottom: 24px;
         @include heading-font;
+      }
+
+      .intro-solution-sub {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 24px;
+        @include heading-font;
+      }
+
+      .see-more {
+        margin-top: 128px;
+        color: rgba($color: #ffffff, $alpha: 0.6);
+        cursor: pointer;
+
+        &:hover {
+          @include infinite;
+          color: rgba($color: #ffffff, $alpha: 1);
+        }
+
+        a {
+          text-decoration: none;
+          color: rgba($color: #ffffff, $alpha: 0.6);
+
+          &:hover {
+            color: rgba($color: #ffffff, $alpha: 1);
+          }
+
+          p {
+            margin-bottom: 8px;
+          }
+        }
       }
     }
   }

@@ -1,8 +1,87 @@
 /*!
- * Start Bootstrap - Agency v5.2.2 (https://startbootstrap.com/template-overviews/agency)
- * Copyright 2013-2019 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
+ * Start Bootstrap - Pharmachain Introduction Application v5.2.2 (https://pharmachain.herokuapp.com/)
+ * Copyright 2013-2019 Pharmachain Group
+ * Licensed under MIT (https://github.com/BlackrockDigital/pca-intro/blob/master/LICENSE)
  */
+
+/*!
+ * animate.css -https://daneden.github.io/animate.css/
+ * Version - 3.7.2
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2019 Daniel Eden
+ */
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/*!
+ * animate.css -https://daneden.github.io/animate.css/
+ * Version - 3.7.2
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2019 Daniel Eden
+ */
+@-webkit-keyframes bounce {
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0);
+  }
+  40%,
+  43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -30px, 0);
+  }
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -15px, 0);
+  }
+  90% {
+    transform: translate3d(0, -4px, 0);
+  }
+}
+
+@keyframes bounce {
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0);
+  }
+  40%,
+  43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -30px, 0);
+  }
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -15px, 0);
+  }
+  90% {
+    transform: translate3d(0, -4px, 0);
+  }
+}
+
+.bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  transform-origin: center bottom;
+}
 
 body {
   overflow-x: hidden;
@@ -144,6 +223,10 @@ img::-moz-selection {
   color: #fed136;
 }
 
+#mainNav .logo {
+  max-width: 44px;
+}
+
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 25px;
@@ -173,7 +256,7 @@ img::-moz-selection {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/header-bg.jpg");
+  background-image: url("../../img/header-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -181,44 +264,71 @@ header.masthead {
 }
 
 header.masthead .intro-text {
-  padding-top: 150px;
-  padding-bottom: 100px;
+  padding-top: 120px;
+  padding-bottom: 230px;
 }
 
-header.masthead .intro-text .intro-lead-in {
-  font-size: 22px;
-  font-style: italic;
-  line-height: 22px;
-  margin-bottom: 25px;
-  font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+header.masthead .intro-text .logo-with-text {
+  max-width: 300px;
+  margin-bottom: 48px;
 }
 
-header.masthead .intro-text .intro-heading {
-  font-size: 50px;
-  font-weight: 700;
-  line-height: 50px;
-  margin-bottom: 25px;
+header.masthead .intro-text .intro-solution {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  margin-bottom: 16px;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+header.masthead .intro-text .intro-solution-sub {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 24px;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 @media (min-width: 768px) {
   header.masthead .intro-text {
-    padding-top: 300px;
-    padding-bottom: 200px;
+    padding-top: 180px;
+    padding-bottom: 420px;
   }
-  header.masthead .intro-text .intro-lead-in {
-    font-size: 40px;
-    font-style: italic;
-    line-height: 40px;
-    margin-bottom: 25px;
-    font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  header.masthead .intro-text .logo-with-text {
+    max-width: 600px;
+    margin-bottom: 64px;
   }
-  header.masthead .intro-text .intro-heading {
-    font-size: 75px;
-    font-weight: 700;
-    line-height: 75px;
-    margin-bottom: 50px;
+  header.masthead .intro-text .intro-solution {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 48px;
+    margin-bottom: 24px;
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  }
+  header.masthead .intro-text .intro-solution-sub {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 24px;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  }
+  header.masthead .intro-text .see-more {
+    margin-top: 128px;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+  }
+  header.masthead .intro-text .see-more:hover {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    color: white;
+  }
+  header.masthead .intro-text .see-more a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  header.masthead .intro-text .see-more a:hover {
+    color: white;
+  }
+  header.masthead .intro-text .see-more a p {
+    margin-bottom: 8px;
   }
 }
 
