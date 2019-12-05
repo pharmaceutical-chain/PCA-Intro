@@ -1,0 +1,52 @@
+{
+    "title": "Pharmachain Introduction Application",
+    "name": "pca-intro",
+    "version": "5.2.2",
+    "scripts": {
+        "dev": "node_modules/.bin/gulp watch",
+        "build": "node_modules/.bin/gulp build",
+        "postinstall": "node_modules/.bin/gulp build"
+    },
+    "description": "Is the introduction page for your exploring our service and our team",
+    "keywords": [
+        "css",
+        "sass",
+        "html",
+        "responsive",
+        "theme",
+        "template"
+    ],
+    "homepage": "https://pharmachain.herokuapp.com/",
+    "bugs": {
+        "url": "https://github.com/pharmaceutical-chain/PCA-Intro/issues",
+        "email": "leekhai18@gmail.com"
+    },
+    "license": "MIT",
+    "author": "Pharmachain Group",
+    "contributors": [
+        "Lee K (https://github.com/leekhai18)"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/pharmaceutical-chain/PCA-Intro"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "5.10.2",
+        "bootstrap": "4.3.1",
+        "jquery": "3.4.1",
+        "jquery.easing": "^1.4.1"
+    },
+    "devDependencies": {
+        "browser-sync": "2.26.7",
+        "del": "5.1.0",
+        "gulp": "4.0.2",
+        "gulp-autoprefixer": "7.0.0",
+        "gulp-clean-css": "4.2.0",
+        "gulp-header": "2.0.9",
+        "gulp-plumber": "^1.2.1",
+        "gulp-rename": "1.4.0",
+        "gulp-sass": "4.0.2",
+        "gulp-uglify": "3.0.2",
+        "merge-stream": "2.0.0"
+    }
+}
