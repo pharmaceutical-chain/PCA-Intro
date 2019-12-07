@@ -1,14 +1,14 @@
-# [Pharmachain Introduction Application](https://pharmachain.herokuapp.com/)
+# [Pharmachain Introduction Application](https://pharmachain-intro.herokuapp.com/)
 
 Is the introduction what the system is, who made the system and is the portal for contact with our.
 
 ## Preview
 
-<!-- [![Agency Preview](https://startbootstrap.com/assets/img/screenshots/themes/agency.png)](https://blackrockdigital.github.io/startbootstrap-agency/) -->
-
-**[View Live Preview](https://pharmachain.herokuapp.com/)**
+**[View Live Preview](https://pharmachain-intro.herokuapp.com/)**
 
 ## Status
+
+[![Heroku](http://heroku-badge.herokuapp.com/?app=angularjs-crypto&style=flat&svg=1&root=index.html)]
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-agency/master/LICENSE)
 

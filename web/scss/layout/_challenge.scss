@@ -1,0 +1,22 @@
+// Styling for the challenge section
+#challenge {
+  .row-center-space {
+    justify-content: space-evenly;
+  }
+
+  .challenge-video {
+    margin-bottom: 24px;
+  }
+
+  .img-icon-container {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    .img-icon {
+      max-height: 100px;
+      width: auto;
+      position: relative;
+    }
+  }
+}

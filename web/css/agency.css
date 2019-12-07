@@ -357,23 +357,62 @@ header.masthead .intro-text .see-more a p {
   }
 }
 
-#solution .solution {
-  background-image: url("../../img/solution.png");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  background-size: cover;
-  width: 100%;
-  height: 768px;
+#solution .row-center-space {
+  justify-content: space-evenly;
 }
 
-#solution .row-center {
+#solution .solution-image {
+  max-width: 100%;
+  margin-bottom: 24px;
+}
+
+#solution .img-icon-container {
+  display: inline-flex;
   justify-content: center;
+  align-items: center;
 }
 
-.service-heading {
+#solution .img-icon-container .img-icon {
+  max-height: 100px;
+  width: auto;
+  position: relative;
+}
+
+#challenge .row-center-space {
+  justify-content: space-evenly;
+}
+
+#challenge .challenge-video {
+  margin-bottom: 24px;
+}
+
+#challenge .img-icon-container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#challenge .img-icon-container .img-icon {
+  max-height: 100px;
+  width: auto;
+  position: relative;
+}
+
+#services .service-heading {
   margin: 15px 0;
   text-transform: none;
+}
+
+#services .img-icon-container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#services .img-icon-container .img-icon {
+  max-height: 100px;
+  width: auto;
+  position: relative;
 }
 
 #portfolio .portfolio-item {

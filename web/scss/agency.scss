@@ -1,24 +1,25 @@
 // Core variables and mixins
-@import "base/variables.scss";
-@import "base/mixins.scss";
+@import "base/variables";
+@import "base/mixins";
 
 // Animates
 @import "animates/animated";
 @import "animates/bounce";
 
 // Global CSS
-@import "base/page.scss";
+@import "base/page";
 
 // Components
-@import "components/buttons.scss";
-@import "components/navbar.scss";
+@import "components/buttons";
+@import "components/navbar";
 
 // Layout
-@import "layout/masthead.scss";
+@import "layout/masthead";
 @import "layout/solution";
-@import "layout/services.scss";
-@import "layout/portfolio.scss";
-@import "layout/timeline.scss";
-@import "layout/team.scss";
-@import "layout/contact.scss";
-@import "layout/footer.scss";
+@import "layout/challenge";
+@import "layout/services";
+@import "layout/portfolio";
+@import "layout/timeline";
+@import "layout/team";
+@import "layout/contact";
+@import "layout/footer";

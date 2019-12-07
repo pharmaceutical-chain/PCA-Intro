@@ -1,16 +1,23 @@
 // Styling for the solution section
 #solution {
-  .solution {
-    background-image: url('../../img/solution.png');
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
-    background-size: cover;
-    width: 100%;
-    height: 768px;
+  .row-center-space {
+    justify-content: space-evenly;
   }
 
-  .row-center {
+  .solution-image {
+    max-width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .img-icon-container {
+    display: inline-flex;
     justify-content: center;
+    align-items: center;
+
+    .img-icon {
+      max-height: 100px;
+      width: auto;
+      position: relative;
+    }
   }
 }
