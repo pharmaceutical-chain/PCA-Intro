@@ -1,5 +1,10 @@
 // Styling for the challenge section
 #challenge {
+  .service-heading {
+    margin: 15px 0;
+    text-transform: none;
+  }
+
   .row-center-space {
     justify-content: space-evenly;
   }
