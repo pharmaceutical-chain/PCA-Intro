@@ -4,7 +4,8 @@
     "version": "5.2.2",
     "scripts": {
         "dev": "node_modules/.bin/gulp watch",
-        "build": "node_modules/.bin/gulp build"
+        "build": "node_modules/.bin/gulp build",
+        "postinstall": "npm run build"
     },
     "description": "Is the introduction page for your exploring our service and our team",
     "keywords": [
