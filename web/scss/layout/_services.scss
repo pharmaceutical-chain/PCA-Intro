@@ -16,4 +16,28 @@
       position: relative;
     }
   }
+
+  .service-go-button {
+    margin-top: 16px;
+    padding-right: 32px;
+
+    i {
+      margin-left: 8px;
+    }
+
+    i.animated {
+      display: none;
+    }
+
+    &:hover {
+      i {
+        display: none;
+      }
+
+      i.animated {
+        @include infinite;
+        display: inherit;
+      }
+    }
+  }
 }

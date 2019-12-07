@@ -59,7 +59,7 @@ try {
                   . "<p>Phone: <b>$phone</b></p>"
                   . "<p>Message: <b>$message</b></p>"
                   . '</div>';
-   $mail->AltBody = "You have received a new message from Introduction Platform Contact Form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email_address\n\nPhone: $phone\n\nMessage: $message";
+   $mail->AltBody = "You have received a new message from Introduction Platform Contact Form.\n\n"."\nName: $name\nEmail: $email_address\nPhone: $phone\nMessage: $message";
 
    $mail->send();
    echo "Message has been sent";
